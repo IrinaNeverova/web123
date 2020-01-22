@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" class = "theme-light" > 
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML,CSS,JS</title>
+    <link rel="stylesheet" href="css/main.css"> 
+</head>
+
+<body>
+    <header>
+        <div id="logo" onclick="slowScroll('#top')">
+            <span>IN</span>
+        </div>
+        <div id="about">
+            <a href="#" title="Main" onclick="slowScroll('#main')">Main</a>
+            <a href="#" title="Overview" onclick="slowScroll('#overview')">Overview</a>
+            <a href="#" title="Contacts" onclick="slowScroll('#contacts')">Contacts</a>
+            <a href="#" title="FAQ" onclick="slowScroll('#faq')">FAQ</a>
+        </div>
+
+    </header>
+
+    <div id="top">
+        <h1>Project</h1>
+        <h3 id="h3">for beginners</h3>
+        <div class="container">
+            <h4>theme switcher</h4>
+            <button id="switch" onclick="toggleTheme()">Switch</button>
+        </div>
+    </div>
+
+    <div id="main">
+        <div class="intro">
+            <h2>Our services</h2>
+            <span>large assortment | fast delivery</span>
+        </div>
+        <div class="text">
+            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.</span>
+        </div>
+    </div>
+
+    <div id="overview">
+        <h2>Overview</h2>
+        <h4>Our offer</h4>
+
+        <div class="img">
+            <img src="https://cdn.pixabay.com/photo/2017/09/16/17/42/business-woman-2756210_1280.jpg" alt="">
+            <span> Offer 1 </span>
+        </div>
+        <div class="img">
+            <img src="https://cdn.pixabay.com/photo/2017/07/02/19/24/dumbbells-2465478_1280.jpg" alt="">
+            <span>Offer 2</span>
+        </div>
+        <!--<div class="img">
+            <img src="https://cdn.pixabay.com/photo/2012/04/13/17/00/lcd-32872_1280.png" alt="">
+            <span>Blabla</span>
+        </div>
+        <div class="img">
+            <img src="https://cdn.pixabay.com/photo/2012/04/13/17/00/lcd-32872_1280.png" alt="">
+            <span>BlaBla</span>
+        </div>-->
+    </div>
+
+    <div id="contacts">
+        <center><h5>Сontacts</h5></center>
+        <form name="form" id="form">
+            <div class="error"></div>
+            <label for="name">Name <span>*</span></label><br>
+            <input type="text" placeholder="Enter your name" name="name" id="name" required><br>
+            <label for="email">Enter your email<span>*</span></label><br>
+            <input type="email" placeholder="Enter your email" name="email" id="email" required><br>
+            
+            <label for="message">Message<span>*</span></label><br>
+            <textarea placeholder="Enter your message"  name="message" id="message"></textarea><br>
+            <div type="submit" class="btn" id="submit">Submit</div>
+        </form>
+    </div>
+
+    <div id="faq">
+        <div>
+            <span class="title">Payment</span><br>
+            <span class="heading">Question 1</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.</p>
+                <span class="heading">Question 2</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.</p>
+                <span class="heading">Question 3</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.</p>
+        </div>
+        <div>
+            <span class="title">Information</span><br>
+            <span class="heading">Question 1</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.</p>
+                <span class="heading">Question 2</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.</p>
+                <span class="heading">Question 3</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.</p>
+        </div>
+        <div>
+            <span class="title">Delivery</span><br>
+            <span class="heading">Question 1</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.</p>
+                <span class="heading">Question 2</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.</p>
+                <span class="heading">Question 3</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.</p>
+        </div>
+    </div>
+
+       
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        function slowScroll(id) {
+            $('html, body').animate({
+                scrollTop: $(id).offset().top
+            }, 500);
+        }
+
+        $(document).on("scroll", function () {
+            if ($(window).scrollTop() === 0)
+                $("header").removeClass("fixed");
+            else
+                $("header").attr("class", "fixed");
+        });
+    </script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
