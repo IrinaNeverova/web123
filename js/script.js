@@ -23,26 +23,18 @@ function toggleTheme() {
 
 /*Validace*/
 
-var form  = document.getElementsByTagName('form')[0];
-var email = document.getElementById('mail');
-var error = document.querySelector('.error');
+function check() {
+  if(!document.getElementById("userEmailId").checkValidity()) {
 
-email.addEventListener("input", function (event) {
-    /*каждый раз, когд вводят чтотл, мы проверяем, является ли корректным поле почты.*/
-  if (email.validity.valid) {
-    /*если появится сообщение об ошибке, если поле является корректным, мы удаляем сообщение об ошибке.*/
-    error.innerHTML = ""; /* cбросить содержимое сообщения */
-    error.className = "error"; /* cбросить визуальное состояние сообщения */
-  }
-}, false);
-form.addEventListener("submit", function (event) {
-  /*Каждый раз, когда пользователь пытается отправить данные, мы проверяем валидность поля электронной почты.*/
-  if (!email.validity.valid) {
+    alert("input not valid!");
+
+  }else {
     
-    /*Если поле невалидно, отображается пользовательское сообщение об ошибке.*/
-    error.innerHTML = "I expect an e-mail, darling!";
-    error.className = "error active";
-    /*и предотвращаем отправку формы путем отмены события*/
-    event.preventDefault();
+    callMeIfValid();
   }
-}, false);
+}
+
+function callMeIfValid() {
+
+  alert("valid input");
+}
